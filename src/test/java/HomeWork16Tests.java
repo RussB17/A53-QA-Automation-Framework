@@ -20,8 +20,11 @@ public class HomeWork16Tests extends BaseTest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+
         String url = "https://qa.koel.app";
         driver.get(url);
+
+        //thread.sleep(2000);
         WebElement registrationLink = driver.findElement(By.cssSelector("[href*='registration']"));
         registrationLink.click();
 
