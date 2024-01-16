@@ -10,12 +10,12 @@ public class LoginTests extends BaseTest {
 
 
 
-//    @Test
-//    public void navigateToKoelApp() {
-//        navigateToUrl();
-//        Assert.assertEquals(driver.getCurrentUrl(), url);
-//        driver.quit();
-//    }
+    @Test
+    public void navigateToKoelApp() {
+        navigateToUrl();
+        Assert.assertEquals(driver.getCurrentUrl(), url);
+        driver.quit();
+    }
 
     @Test
     public void loginValidEmailPassword() {
@@ -30,30 +30,30 @@ public class LoginTests extends BaseTest {
         }
     }
 
-//    @Test
-//    public void loginWithInvalidEmailValidPassword() throws InterruptedException {
-//        provideEmail("invalid@class.com");
-//
-//        providePassword("te$t$tudent");
-//
-//        clickSubmit();
-//        Thread.sleep(2000);
-//
-//        Assert.assertEquals(driver.getCurrentUrl(), url);
-//    }
-//
-//    @Test
-//    public void loginWithInvalidPasswordAndValidEmail() throws InterruptedException {
-//
-//        provideEmail("demo@class.com");
-//
-//        providePassword("invalidPassword");
-//
-//        clickSubmit();
-//        Thread.sleep(2000);
-//
-//        Assert.assertEquals(driver.getCurrentUrl(), url);
-//    }
+    @Test
+    public void loginWithInvalidEmailValidPassword() throws InterruptedException {
+        provideEmail("invalid@class.com");
+
+        providePassword("te$t$tudent");
+
+        clickSubmit();
+        Thread.sleep(2000);
+
+        Assert.assertEquals(driver.getCurrentUrl(), url);
+    }
+
+    @Test
+    public void loginWithInvalidPasswordAndValidEmail() throws InterruptedException {
+
+        provideEmail("demo@class.com");
+
+        providePassword("invalidPassword");
+
+        clickSubmit();
+        Thread.sleep(2000);
+
+        Assert.assertEquals(driver.getCurrentUrl(), url);
+    }
 
 
 }
